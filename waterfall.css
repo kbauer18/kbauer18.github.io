@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+body{
+    background-color:rgb(210,227,231);
+    margin: 0;
+    padding: 0;
+}
+
+.blue_banner{
+    background-color: rgb(129,177,194);
+    width: 100vw;
+    height: 7vh;
+}
+
+.title{
+    position: absolute;
+    top: 225vh;
+    left: -5vw;
+   transform-origin: center;
+   transform: rotate(-79deg);
+   font-size: 8em;
+}
+.author{
+    position: absolute;
+    top: 80vh;
+    left: 2vw;
+    transform-origin: center;
+    transform: rotate(-100deg);
+    font-size: 6em;
+}
+.dates{
+    position: absolute;
+    font-size: 0.5em;
+    margin-top: -2vw;
+}
+
+p{
+    color: black;
+    font-size: 2em;
+    font-family: 'Poiret One', cursive;
+    line-height: .5em;  
+}
+
+
+.stanza1 p:nth-child(2){
+    margin-left: calc(1 *10px);
+}
+.stanza1 p:nth-child(3){
+    margin-left: calc(2 *10px);
+}
+.stanza1 p:nth-child(4){
+    margin-left: calc(3 *10px);
+}
+.stanza1 p:nth-child(5){
+    margin-left: calc(4 *10px);
+}
+.stanza1 p:nth-child(6){
+    margin-left: calc(5 *10px);
+}
+.stanza1 p:nth-child(7){
+    margin-left: calc(6 *10px);
+}
+.stanza1 p:nth-child(8){
+    margin-left: calc(7 *10px);
+}
+.stanza1 p:nth-child(9){
+    margin-left: calc(8 *10px);
+}
+.stanza1 p:nth-child(10){
+    margin-left: calc(9 *10px);
+}
+.stanza1 p:nth-child(11){
+    margin-left: calc(10 *10px);
+}
+.stanza1 p:nth-child(12){
+    margin-left: calc(11 *10px);
+}
+
+.stanza2 p:nth-child(1){
+    margin-left: calc(12 *10px);
+}
+.stanza2 p:nth-child(2){
+    margin-left: calc(13 *10px);
+}
+.stanza2 p:nth-child(3){
+    margin-left: calc(14 *10px);
+}
+.stanza2 p:nth-child(4){
+    margin-left: calc(15 *10px);
+}
+.stanza2 p:nth-child(5){
+    margin-left: calc(16 *10px);
+}
+.stanza2 p:nth-child(6){
+    margin-left: calc(17 *10px);
+}
+.stanza2 p:nth-child(7){
+    margin-left: calc(18 *10px);
+}
+.stanza2 p:nth-child(8){
+    margin-left: calc(19 *10px);
+}
+.stanza2 p:nth-child(9){
+    margin-left: calc(19 *10px);
+}
+.stanza2 p:nth-child(10){
+    margin-left: calc(18 *10px);
+}
+
+.stanza3 p:nth-child(1){
+    margin-left: calc(17 *10px);
+}
+.stanza3 p:nth-child(2){
+    margin-left: calc(16 *10px);
+}
+.stanza3 p:nth-child(3){
+    margin-left: calc(15 *10px);
+}
+.stanza3 p:nth-child(4){
+    margin-left: calc(14 *10px);
+}
+.stanza3 p:nth-child(5){
+    margin-left: calc(13 *10px);
+}
+.stanza3 p:nth-child(6){
+    margin-left: calc(12 *10px);
+}
+.stanza3 p:nth-child(7){
+    margin-left: calc(11 *10px);
+}
+.stanza3 p:nth-child(8){
+    margin-left: calc(10 *10px);
+}
+.stanza3 p:nth-child(9){
+    margin-left: calc(9 *10px);
+}
+.stanza3 p:nth-child(10){
+    margin-left: calc(8 *10px);
+}
+.stanza3 p:nth-child(11){
+    margin-left: calc(7 *10px);
+}
+.stanza3 p:nth-child(12){
+    margin-left: calc(6 *10px);
+}
+.stanza3 p:nth-child(13){
+    margin-left: calc(5 *10px);
+}
+.stanza3 p:nth-child(14){
+    margin-left: calc(4 *10px);
+}
+.stanza3 p:nth-child(15){
+    margin-left: calc(3 *10px);
+}
+.stanza3 p:nth-child(16){
+    margin-left: calc(2 *10px);
+}
+.stanza3 p:nth-child(17){
+    margin-left: calc(1 *10px);
+}
+
+
+
+.stanza1{
+    margin-left: 35vw;
+}
+.stanza2{
+    margin-top: 15vh;
+    margin-left: 35vw;
+}
+.stanza3{
+    margin-top: 15vh;
+    margin-left: 35vw;
+}
+
+.grey_footer{
+    background-color: rgb(169,176,185);
+    width: 100vw;
+    height: 5vh;
+}
+
+
+/*------------Tablet---------*/
+
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    body{
+        background-color: rgb(210,227,231);
+        margin: 0;
+        padding: 0;
+    }
+
+    .blue_banner{
+        background-color: rgb(129,177,194);
+        width: 100vw;
+        height: 7vh;
+    }
+
+    p{
+        color: black;
+        font-size: 2em;
+        font-family: 'Poiret One', cursive;
+        line-height: .9em;  
+    }
+
+    .title{
+        top: 275vh;
+        left:-15vw;
+        transform: rotate(-82deg);
+        font-size: 6em;
+    }
+    .author{
+        
+        top: 80vh;
+        left: -13.30vw;
+        transform: rotate(-95deg);
+        font-size: 4em;
+    }
+    .dates{
+        position: absolute;
+        font-size: 0.5em;
+        margin-top: -2vw;
+    }
+
+    .stanza1{
+        margin-left: 15vw;
+    }
+    .stanza2{
+        margin-left: 15vw;
+    }
+    .stanza3{
+        margin-left: 15vw;
+    }
+
+    .grey_footer{
+        background-color: rgb(169,176,185);
+        width: 100vw;
+        height: 5vh;
+    }
+}
+
+
+/*--------------Smart Phone----------*/
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: rgb(210,227,231);
+        margin: 0;
+        padding: 0;
+        width: 375vw;
+    }
+
+    .blue_banner{
+    background-color: rgb(129,177,194);
+    width: 100%;
+    height: 4.5vh;
+    
+    }
+
+    .poem{
+        overflow: auto;
+    }
+
+    p{
+        color: black;
+        line-height: .8em;
+        font-family: 'Poiret One', cursive;
+        font-size: 1.05em;
+        
+    }
+
+    .title{
+        top: 57vh;
+        left:0vw;
+        transform: rotate(-82deg);
+        font-size: 2.5em;
+    }
+    .author{
+        
+        top: 20vh;
+        left: 2vw;
+        transform: rotate(-105deg);
+        font-size: 2em;
+    }
+    .dates{
+        position: absolute;
+        font-size: 0.5em;
+        margin-top: -2vw;
+    }
+
+    .stanza1{
+        float: left;
+        margin-right: 5vw;
+        margin-left: 30vw;
+    }
+    .stanza2{
+        text-align: center;
+        margin: 0;
+        float: left;
+    }
+    .stanza3{
+        float: left;
+        margin: 0;
+        margin-left: 5vw;
+    }
+
+    .stanza2 p:nth-child(1){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(2){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(3){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(4){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(5){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(6){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(7){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(8){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(9){
+        margin-left: calc(0 *10px);
+    }
+    .stanza2 p:nth-child(10){
+        margin-left: calc(0 *10px);
+    }
+
+    
+
+    .grey_footer{
+        background-color: rgb(169,176,185);
+        width: 100%;
+        height: 4vh;
+       
+    }
+}
