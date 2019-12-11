@@ -1,0 +1,288 @@
+body{
+    background-color: rgb(255,242,217);
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: tenso, sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+a{
+    color: rgb(47,47,47);
+}
+
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.circle{
+    background-color: rgb(59,159,156);
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    margin: 5em;
+    margin-top: 2em;
+}
+#gallery_link{
+    margin-left: auto;
+}
+
+.link_home{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.link_gallery{
+    margin-top: 1.1em;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+.right_blue{
+    background-color: rgb(59,159,156);
+    margin-left: auto;
+    height: 2em;
+    width: 60%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 2em;
+}
+.left_blue{
+    background-color: rgb(59,159,156);
+    height: 2em;
+    width: 60%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: 2em;
+}
+
+.title{
+    background-color: rgb(188,21,202);
+    height: 11.5em;
+    width: auto;
+}
+.title_text{
+    font-size: 9em;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.title_stuff{
+    width: 100%;
+    position: absolute;
+}
+
+.tablet_title{
+    display: none;
+}
+
+
+.image{
+    position: fixed;
+    top: 1vh;
+    bottom: 1vh;
+    left: 0;
+    right: 0;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+.image_info{
+    width: 28%;
+    margin-top: 45em;
+}
+
+.description{
+    background-color: rgb(252,206,121);
+    margin-bottom: 3em;
+    margin-top: 2em;
+    padding: 1em;
+}
+.extra_info{
+    background-color: rgb(252,206,121);
+    padding: 1em;
+}
+.text{
+    font-size: 1.5em;
+}
+
+
+
+
+
+/*-----------tablet-----------*/
+@media only screen and (min-width: 800px) and (max-width:1280px){
+    body{
+        background-color: rgb(216,239,238);
+    }
+
+    .circle{
+        background-color: rgb(252,206,121);
+    }
+
+    .image{
+        position: relative;
+        height: 95vh;
+    }
+
+    .title_stuff{
+        display: none;
+    }
+    .tablet_title{
+        display: block;
+        background-color: rgb(188,21,202);
+        height: 11.5em;
+        width: auto;
+    }
+    .title_text{
+        font-size: 8em;
+    }
+    .tablet_left{
+        background-color: rgb(59,159,156);
+        height: 2em;
+        width: 60%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+    .tablet_right{
+        background-color: rgb(59,159,156);
+        margin-left: auto;
+        height: 2em;
+        width: 60%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .image_info{
+        margin-top: 0em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        grid-column-gap: 10em;
+        padding: 0vh 4em 0vh 4em;
+    }
+    .collaborators{
+        display: none;
+    }
+    .phone_orange{
+        display: none;
+    }
+    .phone_purple{
+        display: none;
+    }
+    .description{
+        margin: 0;
+    }
+
+
+
+}
+
+
+
+
+
+
+/*-----------smart phone----------*/
+@media only screen and (max-width:800px){
+    body{
+        background-color: rgb(234,208,228);
+    }
+
+    .tablet_title{
+        display: block;
+        background-color: rgb(252,206,121);
+        height: 6.5em;
+        width: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .title_text{
+        font-size: 4.5em;
+    }
+    .tablet_left{
+        background-color: rgb(188,21,202);
+        height: 2em;
+        width: 60%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    .tablet_right{
+        background-color: rgb(188,21,202);
+        margin-left: auto;
+        height: 2em;
+        width: 60%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .title_stuff{
+        display: none;
+    }
+
+    .image{
+        position: relative;
+        height: auto;
+        padding-right: 1em;
+        padding-left: 1em;
+        margin-bottom: 0em;
+    }
+
+    .image_info{
+        width: auto;
+        margin-top: 0;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .description{
+        background-color: rgb(59,159,156);
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+    .extra_info{
+        background-color: rgb(59,159,156);
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+
+    .phone_orange{
+        background-color: rgb(252,206,121);
+        height: 2em;
+        width: 60%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    .phone_purple{
+        background-color: rgb(188,21,202);
+        height: 2em;
+        width: 60%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-top: 3em;
+        margin-bottom: 5em;
+        margin-left: auto;
+    }
+
+
+}
