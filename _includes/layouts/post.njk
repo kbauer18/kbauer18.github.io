@@ -3,42 +3,59 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<div class="work__title">
-    {{ title | upper }}
+
+
+
+
+<div class="links">
+    <div class="circle">
+        <a href="/">
+            <p class="link_home">Home</p>
+        </a>
+    </div>
+    <div class="circle" id="gallery_link">
+        <a href="/categories/">
+            <p class="link_gallery" >Gallery</p>
+        </a>
+    </div>
+</div>
+<div class="tablet_title">
+    <p class="title_text">
+        {{title}}
+    </p>
+</div>
+<div class="tablet_left"></div>
+<div class="image">
+    <img src="{{ featured_image | url }}" />
+</div>
+<div class="tablet_right"></div>
+<div class="title_stuff">
+    <div class="right_blue"></div>
+    <div class="title">
+        <p class="title_text">
+            {{title}}
+        </p>
+    </div>
+    <div class="left_blue"></div>
+</div>
+<div class="image_info">
+    <div class="collaborators"></div>
+    <div class="phone_orange"></div>
+    <div class="description">
+        <p class="text">{{description}}
+        </p>
+    </div>
+    <div class="individual_phone_purple"></div>
+    <div class="extra_info">
+        <p class="text">{{materials}}</p>
+        <p class="text">{{year}}</p>
+        <p class="text"> {{dimensions}}</p>
+    </div>
+    <div class="phone_orange"></div>
 </div>
 
 
-<div class="work__layout">
-    <div class="work__featured_image">
-        <img src="{{ featured_image | url }}" />
-    </div>
-    <div>
-        <h4>
-            {{ year }}
-        </h4>
-        <h4>
-            {{ type }}
-        </h4>
-        <h4>
-            {{ materials }}
-        </h4>
-        <h5>
-            {{ description }}
-        </h5>
 
-        {% for tag in tags %}
-            {%- if tag != "posts" -%}
-                {% set tagUrl %}/work/{{ tag }}/{% endset %}
-                <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-            {%- endif -%}
-        {% endfor %}
 
-        <div class="work__support_images">
-            {% for image in support_images %}
-                <img src="{{ image | url }}">
-            {% endfor %}
-        </div>
-        
 
-    </div>
-</div>
+

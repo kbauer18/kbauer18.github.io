@@ -9,9 +9,27 @@ renderData:
   title: Tagged “{{ tag }}”
 ---
 
-<div class="work__title">
-    {{ tag | upper }}
-</div>
+
+        <div class="menu">
+            <div class="circle">
+                <a href="/">
+                    <p class="link_home">Home</p>
+                </a>
+            </div>
+            <div class="rectangle">
+                <p class="category">{{ tag | title }}</p>
+            </div>
+            <div class="circle">
+                <a href="/categories/">
+                    <p class="link_gallery">Gallery</p>
+                </a>
+            </div>
+        </div>
+        <div class="tab_rect">
+            <p class="tab_category">{{ tag | title }}</p>
+        </div>
+
+
     
 {% set postslist = collections[tag] %}
 {% include "partials/postlist.njk" %}

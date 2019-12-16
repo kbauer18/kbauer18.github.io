@@ -1,5 +1,21 @@
 <div class="postlist">
+
+<div class="scroll_window">
+            <div class="scroll">
+                <div class="works">
+
   {% for post in postslist %}
+
+  <div class="gallery_image">
+                        <div class="blue_line"></div>
+                        <div class="purple_bar">
+                            <p> <a href="{{ post.url | url }}">{{ post.data.title }} </a></p>
+                        </div>
+                        <div> <img src="{{ post.data.featured_image | url }}" /></div>
+                    </div>
+                    <div class="gallery_phone_purple"></div>
+                    <div class="phone_blue"></div>
+<!--
     <div class="individual_item">
       <div class="item_image">
         <a href="{{ post.url | url }}">
@@ -13,5 +29,6 @@
         
       </div>
     </div>
+-->
   {% endfor %}
 </div>
