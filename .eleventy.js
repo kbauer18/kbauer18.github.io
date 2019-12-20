@@ -3,7 +3,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('css');
     eleventyConfig.addPassthroughCopy('js');
     eleventyConfig.addPassthroughCopy('.nojekyll');
-    eleventyConfig.addPassthroughCopy('CNAME');
 
 
     eleventyConfig.addCollection("everything", function(collection) {
