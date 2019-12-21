@@ -1,0 +1,287 @@
+body{
+    background-color: rgb(255,242,217);
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: tenso, sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+a{
+    color: rgb(47,47,47);
+}
+
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.circle{
+    background-color: rgb(59,159,156);
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    margin: 5em;
+}
+#gallery_link{
+    margin-left: auto;
+}
+
+.link_home{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.link_gallery{
+    margin-top: 1.1em;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.images{
+    margin-left: 5em;
+    margin-right: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    height: auto;
+}
+
+
+
+.drawing4{
+    display: none;
+}
+.drawing5{
+    display: none;
+}
+.drawing6{
+    display: none;
+}
+.short_purple{
+    display: none;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.blue_stripe{
+    background-color: rgb(59,159,156);
+    height: 2em;
+    width: 78%;
+    position: absolute;
+    margin-left: 10em;
+    margin-top: 5em;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.purple_stripe{
+    background-color: rgb(188,21,202);
+    height: 2em;
+    width: 95%;
+    position: absolute;
+    margin-left: 2.5em;
+    margin-top: 10em;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.center{
+    text-align: center;
+}
+.top_text{
+    margin-top: -.35em;
+}
+.word_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.words{
+    text-align: center;
+    margin-top: -.35em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------tablet-----------*/
+@media only screen and (min-width: 800px) and (max-width:1280px){
+    body{
+        background-color: rgb(216,239,238);
+    }
+    .circle{
+        background-color: rgb(252,206,121);
+    }
+    
+    
+    .images{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-row-gap: 1em;
+        height: 30em;
+    }
+
+    .drawing1{
+        display: none;
+    }
+    .drawing2{
+        display: none;
+    }
+    .drawing3{
+        display: none;
+    }
+
+    .drawing4{
+        display: block;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .drawing5{
+        display: block;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: -3em;
+    }
+    .drawing6{
+        display: block;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        
+    }
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .blue_stripe{
+        display: none;
+    }
+    .purple_stripe{
+        display: none;
+    }
+    .short_purple{
+        display: block;
+        background-color: rgb(188,21,202);
+        width: 45%;
+        height: 3em;
+        position: absolute;
+        margin-top: 3em;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: .5vh 0 0 1vw
+    }
+
+    #right_align{
+        position: relative;
+        float: right;
+        top: 100px;
+        margin-top: 0;
+        width: 75%;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------smart phone----------*/
+@media only screen and (max-width:800px){
+    body{
+        background-color: rgb(234,208,228);
+    }
+
+    
+
+    .images{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-row-gap: 2em;
+        height: 150vh;
+        
+        padding-right: 3vw;
+    }
+
+    .drawing1{
+        margin-left: 0;
+        margin-right: 5em;
+    }
+    .drawing2{
+        margin-top: -3em;
+        margin-left: 4em;
+    }
+    .drawing3{
+        margin-right: 5em;
+    }
+
+
+    .blue_stripe{
+        display: none;
+    }
+    .purple_stripe{
+        display: none;
+    }
+    .short_purple{
+        display: block;
+        background-color: rgb(188,21,202);
+        width: 65%;
+        height: 3em;
+        position: absolute;
+        margin-top: 3em;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: .5vh 0 0 5vw
+    }
+    #right_align_phone{
+        position: relative;
+        float: right;
+        top: 100px;
+        margin-top: 0;
+        width: 100%;
+        background-color: rgb(252,206,121);
+        padding-right: 5vw;
+        
+    }
+
+    #right_words{
+        text-align: right;
+    }
+    
+
+
+
+}
